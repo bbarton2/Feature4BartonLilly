@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap'); url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Yanone+Kaffeesatz&display=swap");
+
+/* styling the title of the specials on the homepage */
+
+.child-text {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.specials {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+
+.restaurant-name {
+  color: #002f0f;
+  font-size:20px;
+  font-weight: 2000;
+}
+
+.left {
+  display: block;
+  float: left;
+  padding-left: 30%;
+}
+.right {
+  display: block;
+  float: right;
+  padding-right: 30%;
+}
+
+p {
+  padding: 10px;
+}
+
+
+/* styling the title of the navigation system on the homepage */
+
+.company {
+  font-family: "Ubuntu", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 900;
+  color: beige;
+  margin: 0;
+  text-transform: uppercase;
+  position: center;
+}
+
+.company a {
+  font-family: "Yanone Kaffeesatz", sans-serif !important;
+  float: left;
+  color: #f2f2f2;
+  text-align: bottom;
+  padding: 0px 40px 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.back {
+  background-color: #002f0f;
+  padding: 25px 20px 75px;
+}
+
+.nav-option {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  background: #002f0f;
+}
+
+.nav-option a {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-option a:hover {
+  background: #269549;
+}
+
+
+/* form styling */
+.form1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2.5vw;
+}
+
+input {
+  font-size: auto;
+}
+/* what the button looks like */
+button {
+  font-family: "Bebas Neue", cursive;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #002f0f;
+  color: white;
+  font-size: 20px;
+}
+
+/* media query styles are only applied if the conditions are met */
+
+@media all and (max-width: 600px) {
+  
+  .nav-option {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    padding-top: 100px;
+    list-style: none;
+    margin: 0;
+    background: #002f0f;
+    top: 40px; /* Position the navbar at the top of the page */
+    width: 100%;
+  }
+  .company {
+    flex-flow: column wrap;
+    padding: 0;
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+  }
+
+  .nav-option a:hover {
+    width: 100%;
+    justify-content: left;
+  }
+
+  
+
+}
+
+

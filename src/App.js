@@ -7,7 +7,16 @@ import {
 import { getSpecials } from "./Services/specials.service.js";
 import { Specials } from "./Components/Specials.js";
 import { Header } from "./Components/Header.js";
-// TODO: import header
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import * as Env from "./enviornment";
+import Parse from "parse";
+
+import { getById } from './Common/LearnService';
+
+
+Parse.initialize(Env.APPLICATION_ID, Env.JAVASCRIPT_KEY);
+Parse.serverURL = Env.SERVER_URL;
 
 function App() {
   const [menu, setMenu] = useState([]);

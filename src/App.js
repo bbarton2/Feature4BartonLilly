@@ -4,11 +4,11 @@ import {
   useState,
   useEffect
 } from "https://unpkg.com/htm/preact/standalone.module.js";
-import { getSpecials } from "./Services/specials.service.js";
-import { Specials } from "./Components/Specials.js";
-import { Header } from "./Components/Header.js";
+import { getSpecials } from "./Common/specials.service.js";
+import { Specials } from "./Components/Specials/Specials.js";
+import { Header } from "./Components/Header/Header.js";
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as Env from "./enviornment";
 import Parse from "parse";
 

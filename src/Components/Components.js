@@ -1,6 +1,6 @@
-import Header from "./Home/Home";
+import Header from "./Header/Header";
 import Locate from "./About/About";
-import Login from "./Footer/Footer";
+import Login from "./Login/Login";
 import Specials from "./Specials/Specials"
 import Subscribe from "./Subscribe/Subscribe"
 import {

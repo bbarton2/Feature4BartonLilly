@@ -1,8 +1,6 @@
 import {
   html,
   render,
-  useState,
-  useEffect
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 import { getSpecials } from "./Services/specials.service.js";
 import { Specials } from "./Components/Specials.js";

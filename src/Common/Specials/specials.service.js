@@ -6,8 +6,8 @@ export function getSpecials() {
 }
 
 export const getById = (id) => {
-  const vehicle = Parse.Object.extend("B4aVehicle");
-  const query = new Parse.Query(vehicle);
+  const spec = Parse.Object.extend("Specials");
+  const query = new Parse.Query(spec);
   return query.get(id).then((result) => {
     return result;
   });

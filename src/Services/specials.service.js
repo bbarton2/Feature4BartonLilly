@@ -1,8 +1,8 @@
 import Parse from "parse";
 
-export const getById = (id) => {
-  const vehicle = Parse.Object.extend("B4aVehicle");
-  const query = new Parse.Query(vehicle);
+export const getByServiceId = (id) => {
+  const special = Parse.Object.extend("Special");
+  const query = new Parse.Query(special);
   return query.get(id).then((result) => {
     return result;
   });

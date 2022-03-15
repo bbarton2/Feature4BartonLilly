@@ -1,20 +1,17 @@
-import {
-  html,
-  useEffect
-} from "https://unpkg.com/htm/preact/standalone.module.js";
+import React from "react"
+import { useEffect } from "react";
 
-export function Header({ title }) {
+export function HeaderModule({ title }) {
   //main header component that is on all pages
   useEffect(() => {
     document.title = title;
   }, [title]);
   // in the future we will add links and routing to the buttons
-  return html`
-    <!-- The html that focuses on the navigation bar -->
+  return (
+    
     <header>
       <nav class="navbar">
         <ul class="nav-option">
-          <!-- Evenetually all nav items are going to be routed to other pages -->
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
           </li>
@@ -31,11 +28,12 @@ export function Header({ title }) {
       </nav>
 
       <div class="cover">
-        <h1 class="company back">${title}</h1>
+        <h1 class="company back">Insert Title</h1>
       </div>
 
       <br />
-      <!-- Information for what this website is gonig to offer -->
     </header>
-  `;
+  );
 }
+
+export default HeaderModule;

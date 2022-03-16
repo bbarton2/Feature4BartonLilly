@@ -8,31 +8,32 @@ export function HeaderModule({ title }) {
   }, [title]);
   // in the future we will add links and routing to the buttons
   return (
-    
+  <div>
     <header>
-      <nav class="navbar">
-        <ul class="nav-option">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+      <nav className="navbar">
+        <ul className="nav-option">
+          <li className="nav-item">
+            <a href="index.html" className="nav-link">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Specials</a>
+          <li className="nav-item">
+            <a href="#" className="nav-link">Specials</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Sign Up</a>
+          <li className="nav-item">
+            <a href="#" className="nav-link">Sign Up</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Login</a>
+          <li className="nav-item">
+            <a href="#" className="nav-link">Login</a>
           </li>
         </ul>
       </nav>
 
-      <div class="cover">
-        <h1 class="company back">Insert Title</h1>
+      <div className="cover">
+        <h1 className="company back">Insert Title</h1>
       </div>
 
       <br />
     </header>
+  </div>
   );
 }
 

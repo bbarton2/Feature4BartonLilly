@@ -1,42 +1,57 @@
 import React, { useEffect, useState } from "react";
 import { getAllRestaurant, getById } from "../../Services/restaurant.service";
-import { getByServiceId } from "../../Services/specials.service";
+import { getByServiceId, getSpecialsByRestaurant } from "../../Services/specials.service";
 
 /* STATEFUL PARENT COMPONENT */
 const SpecialList = () => {
   // Variables in the state to hold data
-  const [special, setSpecial] = useState([]);
-  const [restaurant, setRestaurant] = useState([]);
+  const [specials, setSpecials] = useState([]);
+  const [restaurants, setRestaurants] = useState([]);
   
 
 
   // UseEffect to run when the page loads to
   // obtain async data and render
   useEffect(() => {
-    getAllRestaurant().then((restaurant) => {
-        console.log(restaurant);
-        setRestaurant(restaurant);
-    });
+    getAllRestaurant().then((restaurants) => {
+         console.log(restaurants);
+         setRestaurants(restaurants);   
 
-    // getById().then((special) => {
-    //     console.log(special);
-    //     setSpecial(special);
-    // });
-});
+         const specialsPromises = restaurants.map((restaurant) => {
+            return getSpecialsByRestaurant(restaurant) 
+         })
+
+          Promise.all(specialsPromises).then((specialsResult) => {
+            console.log('specials result',specialsResult)
+            setSpecials(specialsResult)
+          })
+    });
+    
+},[]);
 
 
   return (
     <div>
-        {restaurant.length > 0 && (
+        {restaurants.length > 0 && (
           <ul>
-            {restaurant.map((special) => (
+            {restaurants.map((restaurant, i) => (
               <div>
                 <span>
-                  {/* Using getter for lesson Object to display name */}
-                  <li key={special.get(restaurant)}>{special.get("item")}, {special.get("price")}</li>{" "}
-                  {/* Button with inline click handler to obtain 
-                  instance of lesson for remove state variable*/}
+                  <div className="restaurant-name specials" key={restaurant.id}>{restaurant.get("name")}</div>{" "}
+                    <br />
+                    {specials.length > 0 && (
+                      <ul>
+                        {specials[i].map((special) => (
+                          <div>
+                            <span>
+                              <div className="specials" key={special.id}>{special.get("item")}{" "}{special.get("price")}</div>{" "}
+                            </span>
+                          </div>
+                        )) }
+                      </ul>
+                    )}
                 </span>
+                <br/>
               </div>
             ))}
           </ul>

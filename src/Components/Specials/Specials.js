@@ -4,12 +4,12 @@ import Header from "../Header/Header";
 import { useHistory } from "react-router-dom";
 
 
-/* MAIN MODULE WITH STATEFUL PARENT AND STATELESS CHILD */
+/* Special MODULE WITH STATEFUL PARENT AND STATELESS CHILD */
 const SpecialModule = () => {
   return (
     <div>
-      <Header> </Header>
-      <SpecialList />
+      <HeaderModule />
+      <SpecialList />  {/*calls on child to get inforation so that it can be used in special module */}
     </div>
   );
 };

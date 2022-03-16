@@ -2,7 +2,7 @@ import { useHistory } from "react-router-dom";
 import HeaderModule from "../Header/Header";
 
 
-const Subscribe = () => {
+const SubscribeModule = () => {
     return (
       <div>
         <HeaderModule />
@@ -45,4 +45,4 @@ const Subscribe = () => {
     );
   };
   
-  export default Subscribe;
+  export default SubscribeModule;

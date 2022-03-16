@@ -1,0 +1,19 @@
+- Merge pull request #6 from bbarton2/ParseBarton
+- removed unneeded file
+- Merge pull request #5 from bbarton2/ParseBarton
+- able to correctly obtain information from back for app and render the page showing inforamtion.
+- Merge pull request #4 from bbarton2/ParseBarton
+- Merge branch 'main' into ParseBarton
+- We have a website that runs now -- bugs gone
+- debugging
+- Merge pull request #3 from bbarton2/ParseBarton
+- added the services
+- add service folder
+- created folder for each class for each parse
+- Merge pull request #2 from bbarton2/ParseBarton
+- updated
+- Merge pull request #1 from bbarton2/ParseBarton
+- updated the folder structure
+- edited README.md
+- Add files via upload
+- Initial commit

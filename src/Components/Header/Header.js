@@ -9,7 +9,7 @@ export function HeaderModule({ title }) {
   }, [title]);
   // in the future we will add links and routing to the buttons
   return (
-    
+  <div>
     <header>
        <nav className="navbar">
         <ul className="nav-option">
@@ -24,6 +24,7 @@ export function HeaderModule({ title }) {
           </li>
           <li className="nav-item">
              <Link to="/login" className="nav-link">Login</Link> 
+
           </li>
         </ul>
       </nav> 
@@ -34,6 +35,7 @@ export function HeaderModule({ title }) {
 
       <br />
     </header>
+  </div>
   );
 }
 

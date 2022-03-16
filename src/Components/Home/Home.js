@@ -1,11 +1,10 @@
 import React from "react";
-import SpecialList from "./SpecialList";
+import SpecialList from "../Specials/SpecialList";
 import Header from "../Header/Header";
-import { useHistory } from "react-router-dom";
 
 
 /* MAIN MODULE WITH STATEFUL PARENT AND STATELESS CHILD */
-const SpecialModule = () => {
+const Home = () => {
   return (
     <div>
       <Header> </Header>
@@ -14,4 +13,4 @@ const SpecialModule = () => {
   );
 };
 
-export default SpecialModule;
+export default Home;

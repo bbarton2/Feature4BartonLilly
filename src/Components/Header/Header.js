@@ -1,6 +1,7 @@
 import React from "react"
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom"
+import { BrowserRouter  as Router } from "react-router-dom"
 export function HeaderModule({ title }) {
   //main header component that is on all pages
   useEffect(() => {
@@ -10,22 +11,23 @@ export function HeaderModule({ title }) {
   return (
   <div>
     <header>
-      <nav className="navbar">
+       <nav className="navbar">
         <ul className="nav-option">
           <li className="nav-item">
-            <a href="index.html" className="nav-link">Home</a>
+             <Link to="/home" className="nav-link">Home</Link> 
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">Specials</a>
+             <Link to="/specials"  className="nav-link">Specials</Link> 
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">Sign Up</a>
+             <Link to="/subscribe" className="nav-link">Subscribe</Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">Login</a>
+             <Link to="/login" className="nav-link">Login</Link> 
+
           </li>
         </ul>
-      </nav>
+      </nav> 
 
       <div className="cover">
         <h1 className="company back">Insert Title</h1>

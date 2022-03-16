@@ -21,6 +21,7 @@ const SpecialList = () => {
             return getSpecialsByRestaurant(restaurant) 
          })
 
+
           Promise.all(specialsPromises).then((specialsResult) => {
             console.log('specials result',specialsResult)
             setSpecials(specialsResult)
@@ -28,7 +29,6 @@ const SpecialList = () => {
     });
     
 },[]);
-
 
   return (
     <div>

@@ -21,7 +21,8 @@ const SpecialList = () => {
             return getSpecialsByRestaurant(restaurant) 
          })
 
-
+         //this is ensurning that all specials for each restaruatnt
+         // will be in corresponing arrays
           Promise.all(specialsPromises).then((specialsResult) => {
             console.log('specials result',specialsResult)
             setSpecials(specialsResult)
@@ -32,6 +33,7 @@ const SpecialList = () => {
 
   return (
     <div>
+        {/* checks to see if there are restuarnats that exist  */}
         {restaurants.length > 0 && (
           <ul>
             {restaurants.map((restaurant, i) => (
@@ -39,6 +41,7 @@ const SpecialList = () => {
                 <span>
                   <div className="restaurant-name specials" key={restaurant.id}>{restaurant.get("name")}</div>{" "}
                     <br />
+                    {/* checks to see if there are specials that exist  */}
                     {specials.length > 0 && (
                       <ul>
                         {specials[i].map((special) => (

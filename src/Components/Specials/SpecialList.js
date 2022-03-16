@@ -34,6 +34,7 @@ const SpecialList = () => {
   return (
     <div>
         {/* checks to see if there are restuarnats that exist  */}
+        {/* we want to clean up the CSS and make the list look nicer in a future feature */}
         {restaurants.length > 0 && (
           <ul>
             {restaurants.map((restaurant, i) => (
@@ -42,6 +43,7 @@ const SpecialList = () => {
                   <div className="restaurant-name specials" key={restaurant.id}>{restaurant.get("name")}</div>{" "}
                     <br />
                     {/* checks to see if there are specials that exist  */}
+                    {/* generates a list of specials to be used on the home and specials component */}
                     {specials.length > 0 && (
                       <ul>
                         {specials[i].map((special) => (

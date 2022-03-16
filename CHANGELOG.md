@@ -1,7 +1,15 @@
+- Merge pull request #8 from bbarton2/commentAddBarton
+- cadded comments and cleaned up formatting
+- removed html files
+- Merge pull request #7 from bbarton2/RoutingLilly2
+- Merge branch 'main' into RoutingLilly2
+- added the cahnge log that is based on all past and now future pull requests.
 - Merge pull request #6 from bbarton2/ParseBarton
 - removed unneeded file
 - Merge pull request #5 from bbarton2/ParseBarton
 - able to correctly obtain information from back for app and render the page showing inforamtion.
+- Added routes for Home, Specials, Login, and Subscribe
+- home.js
 - Merge pull request #4 from bbarton2/ParseBarton
 - Merge branch 'main' into ParseBarton
 - We have a website that runs now -- bugs gone

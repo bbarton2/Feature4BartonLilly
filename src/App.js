@@ -1,6 +1,6 @@
 import "./styles.css";
 import React, { useState, useEffect } from "react";
-import * as Env from "./enviornment";
+import * as Env from "./environment";
 import Parse from "parse";
 import Components from "./Components/Components.js";
 

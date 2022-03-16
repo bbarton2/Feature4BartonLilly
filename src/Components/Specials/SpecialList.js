@@ -22,7 +22,7 @@ const SpecialList = () => {
     //     console.log(special);
     //     setSpecial(special);
     // });
-});
+}, []);
 
 
   return (

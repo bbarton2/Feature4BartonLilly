@@ -1,3 +1,9 @@
+- Merge pull request #10 from bbarton2/commentsLilly
+- added comments for routing (done by devin)
+- Merge pull request #9 from bbarton2/subscribeTestBarton
+- cereated sub modules for the form on subscribe and login
+- fixed formatting and added comments
+- added change log
 - Merge pull request #8 from bbarton2/commentAddBarton
 - cadded comments and cleaned up formatting
 - removed html files

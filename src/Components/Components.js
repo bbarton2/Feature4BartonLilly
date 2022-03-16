@@ -3,7 +3,7 @@ import Home from "./Home/Home"
 import SpecialsModule from "./Specials/Specials"
 import SubscribeModule from "./Subscribe/Subscribe"
 import LoginModule from "./Login/Login"
-import {
+import { //need to import for Routing to work
   BrowserRouter as Router,
   Route,
   Switch,
@@ -16,7 +16,8 @@ export default function Components() {
     return (
     <div>
       {/* where all of the routing is done between the components    */}
-      <Router>
+      <Router> 
+      {/* adding routes for all components on the main nav bar */}
         <Switch>
           <Route path="/home" exact component={Home} />
           <Route path="/specials" component={SpecialsModule} />

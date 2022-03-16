@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../Header/Header"
+import HeaderModule from "../Header/Header"
 import { Link } from "react-router-dom"
 
 
-function Login({ title }) {
-
+function LoginModule({ title }) {
 
     return (
         <div>
-        <Header> </Header> 
+        <HeaderModule /> 
 
          <p> In login </p>
         
@@ -32,4 +31,4 @@ function Login({ title }) {
     );
 }
 
-export default Login;
+export default LoginModule;

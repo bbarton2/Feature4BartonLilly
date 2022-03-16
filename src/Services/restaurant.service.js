@@ -1,5 +1,5 @@
 import Parse from "parse";
-
+// query the restaurant by id
 export const getById = (id) => {
   const restaurant = Parse.Object.extend("Restaurant");
   const query = new Parse.Query(restaurant);
@@ -7,7 +7,7 @@ export const getById = (id) => {
     return result;
   });
 };
-
+//gets all restaurants in database
 export const getAllRestaurant = () => {
     const Restaurant = Parse.Object.extend("Restaurant");
     const query = new Parse.Query(Restaurant);

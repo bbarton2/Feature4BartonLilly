@@ -1,6 +1,6 @@
 import React from "react";
 import SpecialList from "./SpecialList";
-import Header from "../Header/Header";
+import HeaderModule from "../Header/Header";
 import { useHistory } from "react-router-dom";
 
 
